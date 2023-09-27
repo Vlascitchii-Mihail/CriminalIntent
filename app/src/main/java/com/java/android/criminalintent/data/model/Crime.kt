@@ -1,4 +1,4 @@
-package com.java.android.criminlinent.data.model
+package com.java.android.criminalintent.data.model
 
 import java.util.Date
 import java.util.UUID

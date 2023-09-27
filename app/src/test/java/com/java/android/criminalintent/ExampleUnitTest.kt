@@ -1,4 +1,4 @@
-package com.java.android.criminlinent
+package com.java.android.criminalintent
 
 import org.junit.Test
 

@@ -1,4 +1,4 @@
-package com.java.android.criminlinent
+package com.java.android.criminalintent
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
