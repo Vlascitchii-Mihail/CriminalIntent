@@ -1,4 +1,4 @@
-package com.java.android.criminlinent
+package com.java.android.criminalintent
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -13,7 +13,10 @@ abstract class BaseFragment<VB : ViewBinding>(
 
     private var _binding: VB? = null
     protected val binding: VB
-        get() = _binding as VB
+//        get() = _binding as VB
+        get() = checkNotNull(_binding as VB) {
+            "Can't access binding because it's still null. Is the view visible?"
+}
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -24,8 +27,8 @@ abstract class BaseFragment<VB : ViewBinding>(
         return binding.root
     }
 
-    override fun onDestroy() {
-        super.onDestroy()
+    override fun onDestroyView() {
+        super.onDestroyView()
         _binding = null
     }
 }
