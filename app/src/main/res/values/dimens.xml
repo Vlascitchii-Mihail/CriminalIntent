@@ -3,4 +3,11 @@
 
 <!--    Margins-->
     <dimen name="margin_medium">16dp</dimen>
+    <dimen name="margin_small">8dp</dimen>
+
+    Paddings
+    <dimen name="padding_small">8dp</dimen>
+
+<!--    View sizes-->
+    <dimen name="decoration_recycler_view">1dp</dimen>
 </resources>

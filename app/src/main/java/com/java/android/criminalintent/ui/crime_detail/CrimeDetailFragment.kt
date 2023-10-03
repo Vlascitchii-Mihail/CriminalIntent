@@ -22,7 +22,7 @@ class CrimeDetailFragment: BaseFragment<FragmentCrimeDetailBinding>(FragmentCrim
     private fun setupView() = with(binding) {
         crime = Crime(
             id = UUID.randomUUID(),
-            title = "",
+            title = "Test title",
             date = Date(),
             isSolved = false
         )
